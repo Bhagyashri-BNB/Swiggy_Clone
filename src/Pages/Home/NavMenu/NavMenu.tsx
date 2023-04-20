@@ -3,6 +3,7 @@ import { Box, Button, TextField } from '@mui/material'
 import Grid from '@mui/material/Grid'
 import Typography from "@mui/material/Typography"
 import Divider from '@mui/material/Divider/Divider'
+
 const NavMenu = () => {
     const company=[
         'About us',
@@ -61,14 +62,12 @@ const NavMenu = () => {
                                 return(
                                 <Typography sx={{mt:1,color:'white', fontSize:'13px', fontFamily:'ProximaNova,arial,Helvetica Neue,sans-serif', textAlign: 'left', marginLeft: '130px'}} key={index}>{leg}</Typography>
                             )
-                        })}
-                        
+                        })}   
                 </Grid>
                 <Grid item xs={3}>
                 <img style={{marginTop: '60px', width:'170px'}} alt="" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-AppStore_lg30tv"></img>
                 <img style={{marginTop: '15px', width:'170px'}} alt="" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-GooglePlay_1_zixjxl"></img>
                 </Grid>
-            
             </Grid>
             <hr  style={{width: '1200px', alignItems: 'center'}}/>
         </Box>

@@ -3,6 +3,7 @@ import { Box, Button, TextField } from '@mui/material'
 import Grid from '@mui/material/Grid'
 import Typography from "@mui/material/Typography"
 import Divider from '@mui/material/Divider/Divider'
+
 const DiliveryLocations = () => {
     const locations=[
         'Abohar',

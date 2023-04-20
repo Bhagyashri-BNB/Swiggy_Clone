@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Button, TextField } from '@mui/material'
 import Grid from '@mui/material/Grid'
-import { images } from '../../utils/constants/images'
+import { images } from '../../../utils/constants/images'
 import Typography from "@mui/material/Typography"
 import MyLocationIcon from '@mui/icons-material/MyLocation';
 import { orange } from '@mui/material/colors'
@@ -46,6 +46,7 @@ const Login = () => {
             <Box
                 height='400px'
                 width='100%'
+               sx={{display:"flex", flexWrap:"wrap"}}
             >
                 <Grid container>
                     <Grid item xs={6}>
@@ -74,9 +75,7 @@ const Login = () => {
                                                     ) : (
                                                         <Button size="small" sx={{ mt: 1, fontSize: "10px", borderRadius: '0px' }}>Locate Me</Button>
                                                     )
-
                                                 }
-
                                             </>
                                         </>
                                     )

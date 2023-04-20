@@ -13,7 +13,7 @@ const Footer = () => {
         >
             <Grid container>
                 <Grid item xs={4}>
-                    <img style={{marginTop: '10px'}}width="142" alt="" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_284/Logo_f5xzza"></img>
+                    <img style={{marginTop: '6px'}}width="142" alt="" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_284/Logo_f5xzza"></img>
                 </Grid>
                 <Grid item xs={4}>
                     <Typography sx={{ color: 'white', marginTop: '10px'}}>@ 2023 By Bhagyashri</Typography>
