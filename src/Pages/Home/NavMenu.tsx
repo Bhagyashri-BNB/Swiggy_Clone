@@ -33,17 +33,17 @@ const NavMenu = () => {
   return (
     <div>
         <Box
-        height='500px'
+        height='360px'
         width='fullwidth'
         // sx={{backgroundColor: 'black'}}
-        sx={{backgroundColor: 'black',  borderTop: '1px solid gray', mt: 5}}
+        sx={{backgroundColor: 'black',  borderTop: '1px solid gray', mt: 5,  }}
         >
             <Grid container>
                 <Grid item xs={3}>
                     <Typography sx={{mt: 7, color:'white', fontWeight:'bold'}}>COMPANY</Typography>
                         {company.map((com,index)=>{
                                 return(
-                                <Typography sx={{mt:1, color:'white', fontSize:'13px', fontFamily:'ProximaNova,arial,Helvetica Neue,sans-serif'}} key={index}>{com}</Typography>
+                                <Typography sx={{mt:1, color:'white', fontSize:'13px', fontFamily:'ProximaNova,arial,Helvetica Neue,sans-serif', textAlign: 'left', marginLeft: '130px'}} key={index}>{com}</Typography>
                             )
                         })}
                 </Grid>
@@ -51,7 +51,7 @@ const NavMenu = () => {
                     <Typography sx={{mt: 7, color:'white', fontWeight:'bold'}}>CONTACT</Typography>
                     {contact.map((cont,index)=>{
                                 return(
-                                <Typography sx={{mt:1, color:'white', fontSize:'13px', fontFamily:'ProximaNova,arial,Helvetica Neue,sans-serif'}} key={index}>{cont}</Typography>
+                                <Typography sx={{mt:1, color:'white', fontSize:'13px', fontFamily:'ProximaNova,arial,Helvetica Neue,sans-serif', textAlign: 'left', marginLeft: '130px'}} key={index}>{cont}</Typography>
                             )
                         })}
                 </Grid>
@@ -59,16 +59,18 @@ const NavMenu = () => {
                     <Typography sx={{mt :7 ,color:'white', fontWeight:'bold'}}>LEGAL</Typography>
                     {legal.map((leg,index)=>{
                                 return(
-                                <Typography sx={{mt:1,color:'white', fontSize:'13px', fontFamily:'ProximaNova,arial,Helvetica Neue,sans-serif'}} key={index}>{leg}</Typography>
+                                <Typography sx={{mt:1,color:'white', fontSize:'13px', fontFamily:'ProximaNova,arial,Helvetica Neue,sans-serif', textAlign: 'left', marginLeft: '130px'}} key={index}>{leg}</Typography>
                             )
                         })}
                         
                 </Grid>
                 <Grid item xs={3}>
-                        <Divider sx={{ width: 'fullwidth',height: '100px', color:'white'}}/>
+                <img style={{marginTop: '60px', width:'170px'}} alt="" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-AppStore_lg30tv"></img>
+                <img style={{marginTop: '15px', width:'170px'}} alt="" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-GooglePlay_1_zixjxl"></img>
                 </Grid>
-               <Divider />
+            
             </Grid>
+            <hr  style={{width: '1200px', alignItems: 'center'}}/>
         </Box>
     </div>
   )

@@ -3,6 +3,8 @@ import Login from './Login'
 import Messages from './Messages'
 import Phones from './Phones'
 import NavMenu from './NavMenu'
+import Footer from './Footer'
+import DiliveryLocations from './DiliveryLocations'
 
 export const Home = () => {
   return (
@@ -11,6 +13,9 @@ export const Home = () => {
       <Messages />
       <Phones />
       <NavMenu/>
+      <DiliveryLocations />
+      <Footer />
+      
     </div>
   )
 }
